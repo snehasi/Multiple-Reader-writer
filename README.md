@@ -1,4 +1,6 @@
 # Multiple-Reader-writer
+The multiple user reader writer problem wherein multi- ple “writers” can write to a shared queue and multiple “readers” can read data off the shared queue with no race conditions. While a reader “writes” a certain element to the queue, no “reader” can read that element. The readers may read other elements but not the one current written to. Similarly, only one “writer” can update the queue at a time. Multiple “readers” may read elements off the queue but dequeuing from the queue by the “readers” must be atomic.
+
 ## Description Of Code
 
 1. Main function :
